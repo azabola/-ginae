@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GINAÉ - Carry Elegance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      scroll-behavior: smooth;
+      background: #fffafc;
+      color: #3c3c3c;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(to right, #fce4ec, #fffafc);
+      color: #a67863;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero img {
+      width: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: zoomIn 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin: 20px 0 10px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 20px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    .hero a {
+      background-color: #a67863;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+      margin-top: 20px;
+      animation: bounceIn 2.5s ease;
+    }
+    .quote {
+      font-style: italic;
+      color: #5a5a5a;
+      font-size: 20px;
+      animation: fadeIn 3s ease;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .product-card {
+      width: 270px;
+      background-color: #fdf3f7;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .product-card h3 {
+      margin-top: 15px;
+    }
+    .product-card p {
+      color: #777;
+    }
+    .product-card a {
+      text-decoration: none;
+      color: #a67863;
+      border: 1px solid #a67863;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .about, .contact {
+      background-color: #fffafc;
+    }
+    .contact a {
+      color: #a67863;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;} to {opacity: 1;}
+    }
+    @keyframes slideIn {
+      from {transform: translateY(-30px); opacity: 0;} to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes zoomIn {
+      from {transform: scale(0.9); opacity: 0;} to {transform: scale(1); opacity: 1;}
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from {transform: translateY(20px); opacity: 0;} to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="section hero">
+    <img src="https://i.postimg.cc/fy4jJbjy/Whats-App-Image-2025-06-30-at-16-05-36-92d9f4b5.jpg" alt="GINAÉ Logo">
+    <h1>GINAÉ</h1>
+    <p>Carry Elegance, Carry Ginaé</p>
+    <a href="#collection">Explore Our Bags</a>
+  </div>
+
+  <!-- Quote Section -->
+  <div class="section quote">
+    “Elegance is when the inside is as beautiful as the outside.” – Coco Chanel
+  </div>
+
+  <!-- Collection Section -->
+  <div id="collection" class="section">
+    <h2 style="color:#a67863; font-size:32px;">Coming Soon – Our Bag Collection</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://i.postimg.cc/Twn5NJg2/Screenshot-2025-06-30-161646.png" alt="Sky Gloss Bag">
+        <h3>GINAÉ Bag</h3>
+        <p>EGP 220</p>
+        <a href="https://wa.me/201286348494">Order on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section about">
+    <h2 style="color:#a67863;">About GINAÉ</h2>
+    <p style="max-width:700px; margin:auto; font-size:16px; color:#5a5a5a; line-height:1.8;">
+      GINAÉ is a fashion-forward brand created to celebrate elegance, individuality, and confidence. Each bag is designed with care and made to empower modern women with beauty, function, and timeless charm.
+    </p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section contact">
+    <h2 style="color:#a67863;">Let’s Connect</h2>
+    <p>Email: <a href="mailto:ginageorge487@gmail.com">yourmail@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/ginaee1" target="_blank">@ginaee1</a></p>
+    <p>WhatsApp: <a href="https://wa.me/201286348494">Message Us</a></p>
+  </div>
+</body>
+</html>
